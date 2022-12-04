@@ -10,3 +10,48 @@ body {
 .App {
   text-align: center;
 }
+
+.btns{
+  background-color: rgb(28, 70, 70);
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+.toggle{
+  padding-top: 10px;
+}
+.toggle button{
+  background-color: rgb(15, 124, 164);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  width: 130px;
+  height: 30px;
+  
+}
+.hr hr{
+  width: 70%;
+  display: flex;
+}
+.comments{
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding-top: 1em;
+}
+.comment{
+  background-color: antiquewhite;
+  padding: 3px 2px 2px 3px;
+  border-radius: 5px;
+  width: 10em;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
