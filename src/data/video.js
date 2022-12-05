@@ -9,23 +9,38 @@ const video = {
   comments: [
     {
       id: 1,
-      user: "duanebot",
-      comment: "first!",
+      user: "Duanebot",
+      comment: "That one is dope!",
     },
     {
       id: 2,
-      user: "gaeron",
-      comment: "What a great tutorial!",
+      user: "Gaeron",
+      comment: "wow got a message",
     },
     {
       id: 3,
-      user: "gaeron",
-      comment: "What a great tutorial!",
+      user: "Fury",
+      comment: "I love the dance",
     },
     {
       id: 4,
-      user: "gaeron",
-      comment: "What a great tutorial!",
+      user: "Bot",
+      comment: "Cant hear anything",
+    },
+    {
+      id: 5,
+      user: "Bot",
+      comment: "Cant hear anything",
+    },
+    {
+      id: 6,
+      user: "Bot",
+      comment: "Cant hear anything",
+    },
+    {
+      id: 7,
+      user: "Bot",
+      comment: "Cant hear anything",
     },
   ],
 };

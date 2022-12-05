@@ -43,15 +43,34 @@ body {
   display: flex;
   justify-content: center;
   gap: 1em;
-  padding-top: 1em;
+  
+
 }
 .comment{
-  background-color: antiquewhite;
+  background-color: beige;
+  
   padding: 3px 2px 2px 3px;
   border-radius: 5px;
   width: 10em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
 }
 .flex{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+}
+.search input{
+  height: 30px;
+  border: 2px solid green;
+}
+.icon{
+  position: relative;
+  padding-left: 10px;
+  
+  color: green;
+  
+}
+.icon-data{
+height: 30px ;
+  width: 60px;
 }

@@ -15,6 +15,7 @@ const Video = () => {
     const [upvotes, setUpvotes] = useState(278)
     const [downvotes, setdownvotes] = useState(94);
     const [data, setData] = useState(array);
+    const [search, setSearch] = useState("")
     
 
     function Upvote() {
@@ -24,14 +25,20 @@ const Video = () => {
         
     }
     function Downvote() {
-      let count = downvotes - 1;
+      let count = downvotes + 1;
       setdownvotes(count);
     }
     
     function DeleteComment(id) {
         setData(data.filter((comment) => comment.id !== id));
     }
-
+    
+    function Search(e) {
+        e.preventDefault()
+        setData(data.filter((comment) => comment.user === search))
+        
+        setSearch("")
+    }
   return (
     <div className="video-data">
       <iframe
@@ -58,7 +65,7 @@ const Video = () => {
             <hr />
           </div>
           
-          {toggleComments && <Comments deleted={DeleteComment} data={data} />}
+          {toggleComments && <Comments foundComment={Search} findComment={search} onFindComment={setSearch} deleted={DeleteComment} data={data} />}
         </div>
       </div>
     </div>
